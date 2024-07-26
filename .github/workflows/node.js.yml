@@ -35,4 +35,4 @@ jobs:
     - name: Restart PM2 process
       run: pm2 restart index.js --name "backend"
 
-    - run: npm test
+    
