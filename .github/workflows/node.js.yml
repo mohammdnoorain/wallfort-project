@@ -32,7 +32,7 @@ jobs:
         touch .env
         echo "${{ secrets.PROD }}" > .env
 
-    - name: Restart PM2 process
-      run: pm2 restart index.js --name "backend"
+  
+    
 
     
