@@ -7,7 +7,7 @@ dotenv.config();
 
 const PORT = process.env.PORT || 4000;
 const cors = require("cors");
-const corsOrigin = process.env.CORS_ORIGIN.split(',');
+const corsOrigin = process.env.CORS_ORIGIN;
 const user = require("./route/userroute.js");
 const clientroute = require("./route/clientroute.js");
 const visitorRoute = require("./route/visitorRoute.js")
