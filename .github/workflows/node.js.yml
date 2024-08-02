@@ -30,7 +30,13 @@ jobs:
     - name: Set up .env
       run: |
         touch .env
-        echo "${{ secrets.PROD }}" > .env
+        echo "MONGODB_URI=${{ secrets.MONGODB_URI }}" >> .env
+        echo "EMAIL_USER=${{ secrets.EMAIL_USER }}" >> .env
+        echo "EMAIL_PASS=${{ secrets.EMAIL_PASS }}" >> .env
+        echo "PORT=${{ secrets.PORT }}" >> .env
+        echo "CORS_ORIGIN=${{ secrets.CORS_ORIGIN }}" >> .env
+        echo "CONNECTION_STRING=${{ secrets.CONNECTION_STRING }}" >> .env
+        echo "CONTAINER_NAME=${{ secrets.CONTAINER_NAME }}" >> .env
 
   
     
